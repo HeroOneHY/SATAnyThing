@@ -3,7 +3,14 @@ cd sam; pip install -e .
 cd -
 
 # Install Grounding-Dino
-pip install -e git+https://github.com/IDEA-Research/GroundingDINO.git@main#egg=GroundingDINO
+# 1. 创建 src 目录并进入
+mkdir -p src
+cd src
+
+# 2. Clone 仓库
+git clone https://github.com/IDEA-Research/GroundingDINO.git
+pip install rf-groundingdino
+cd -
 
 # Install other lib
 pip install numpy opencv-python pycocotools matplotlib Pillow==9.2.0 scikit-image
