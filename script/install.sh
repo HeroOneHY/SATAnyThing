@@ -8,7 +8,7 @@ mkdir -p src
 cd src
 
 # 2. Clone 仓库
-git clone https://github.com/IDEA-Research/GroundingDINO.git
+git clone https://github.com/IDEA-Research/GroundingDINO.git groundingdino
 pip install rf-groundingdino
 cd -
 
